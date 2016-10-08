@@ -17,7 +17,7 @@
  <center>
  
  <h2><img src="./imagenes/buscar.png">   Buscar Empleados: </h2> <br>
- <form method="post" action="<?php echo $PHP_SELF;?>">
+ <form method="post" action="<?php echo @$PHP_SELF;?>">
  <table>
 <tr>
 <td>
@@ -34,10 +34,10 @@
 //crear array
 $options = array();
 include("conectarbbdd.php");
-$result = mysql_query("SELECT * FROM  `t_estadosemp`");
+$result = @mysql_query("SELECT * FROM  `t_estadosemp`");
 $options[] = '&nbsp';
 //opciones que tendra el dropdown
-while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
+while ($row = @mysql_fetch_array($result, MYSQL_NUM)) {
     $options[] = $row[1];
 }
 echo('<td><label> Estado del Empleado </label> </td> <td>');

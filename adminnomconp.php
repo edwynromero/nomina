@@ -111,8 +111,9 @@ echo('
 </tr> <tr> <td> Escoge el Tipo de Concepto:  ');
     $name = 'tipoconcepto';
     $options = array('Devengo', 'Deduccion');
-	 //opcion seleccionada en el dropdown
-	 $selected = $_POST['tipoconcepto'];
+	 //opcion seleccionada en el dropdown 212121
+	 
+	 @$selected = $_POST['tipoconcepto'];
 	 //crear dropdwon con las opciones de estado, y pasarle a la funcion de crear el valor que esta en BBDD
 	 echo crear_dropdown( $name, $options, $selected );
 echo('</td> </tr> <tr></tr>
