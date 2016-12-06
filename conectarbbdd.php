@@ -1,5 +1,5 @@
 <?php
 	mysql_connect('localhost', 'root', '') or
-    die('Could not connect: ' . mysql_error());
+    die('No se puede conectar: ' . mysql_error());
 	mysql_select_db('facturacrm');
 	?>
