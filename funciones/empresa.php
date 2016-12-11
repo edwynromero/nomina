@@ -1,4 +1,4 @@
 <?php
-	$nombreemp='NOMBRE EMPRESA';
+	$nombreemp='H.l.Boulton';
 	$cifemp='000000000F';
-	?>
+	?>	?>
